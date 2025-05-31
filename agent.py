@@ -93,7 +93,7 @@ with st.container():
                 response = asyncio.run(run_translator_agent(user_input))
                 st.success("✅ Translation Complete:")
                 st.markdown(
-                    f"<div style='background-color: #f0f2f6; padding: 15px; border-radius: 10px; font-size: 1.1em;'>{response.final_output}</div>", unsafe_allow_html=True)
+                    f"<div style='padding: 15px; border-radius: 10px; font-size: 1.1em;'>{response.final_output}</div>", unsafe_allow_html=True)
 
 st.markdown("""
     <div class="footer">
