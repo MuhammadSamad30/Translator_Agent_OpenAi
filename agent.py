@@ -41,7 +41,6 @@ Respond only with the translated text, nothing else.
 """
 )
 
-
 async def run_translator_agent(user_input):
     return await Runner.run(translator, input=user_input, run_config=config)
 
